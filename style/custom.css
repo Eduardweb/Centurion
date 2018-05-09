@@ -3,6 +3,7 @@
 /* == BTN ==*/
 /* == Header ==*/
 /* == Home ==*/
+/* == ABOUT ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -559,7 +560,155 @@ header .nav-item.dropdown.show a.nav-link{
 }
 /* =========== End Home =============== */
 
-/* ============= Footer ================== */
+/* =========== ABOUT ================== */
+.culture{
+  padding: 0;
+  background-color: #000;
+  height: 700px;
+}
+.culture h2{
+  padding: 190px 0 0;
+}
+.culture p{
+  margin: 20px 0;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 480px;
+}
+
+.culture .culture-img img{
+  position: absolute;
+  width: 960px;
+  top: -100px;
+  z-index: 2;
+}
+.culture-box-content{
+  padding-left: 100px;
+}
+.people{
+  padding: 200px 0 150px;
+  overflow: hidden;
+}
+.people p{
+  max-width: 480px;
+  margin: 20px 0 0;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #444444;
+}
+.people p.number{
+  opacity: 0.1;
+  font-family: 'ApercuPro-Mono';
+  font-size: 130px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: -3px;
+  text-align: left;
+  color: #000000;
+}
+.people p.number,
+.people-block-img {
+  max-width: 1500px;
+  width: 1500px;
+}
+.people p.number span{
+  letter-spacing: normal;
+}
+.people-block-img {
+  top: 53px;
+  position: absolute;
+  left: -40px;
+}  
+.story{
+  background-color: black;
+  padding: 118px 0 200px;
+}
+.story p{
+  margin: 20px 0 0 ;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 480px;
+}
+.story p a{
+  text-decoration: underline;
+}
+.story p a:hover{
+  text-decoration: none;
+}
+.story p.number{
+  margin: 0;
+  opacity: 0.2;
+  font-family: 'ApercuPro-Mono';
+  font-size: 130px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: -3px;
+  text-align: left;
+  color: #ffffff;
+  max-width: 100%;
+}
+.story-block-img {
+  position: absolute;
+  top: 102px;
+  right: 0;
+  max-width: 244px;
+}
+.facilities{
+  padding: 200px 0 266px;
+  position: relative;
+}
+.facilities p{
+  margin: 20px 0 0;
+  max-width: 480px;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #444444;
+}
+.facilities-bg{
+  position: absolute;
+  top: -110px;
+  right: 0;
+  z-index: 2;
+  max-width: 580px;
+}
+
+/* =========== End ABOUT ============== */
+
+/* ============= Footer =============== */
 footer .footer-top{
   padding: 120px 80px 80px;
 }
