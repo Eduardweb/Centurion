@@ -48,6 +48,25 @@ h1{
   text-align: left;
   color: #000000;
 }
+h1.page-title{
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  padding: 40px 0 30px;
+}
+.default-bread{
+  margin: 0;
+  padding: 0;
+  font-family: 'ApercuPro-Mono';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 3.6px;
+  text-align: left;
+  color: #444444;
+  text-transform: uppercase;
+}
 h2{
   font-size: 60px;
   line-height: 1;
@@ -66,39 +85,6 @@ h5{
 .color-black{
   color: #000;
 }
-/* h3{
-	font-size: 56px;
-	letter-spacing: -2px;
-  color: #27384b;
-  margin: 0 0 36px;
-} */
-/* h3.contact{
-  margin: 0 0 40px;
-  text-align: center;
-}
-.h3-inlineBlock{
-  display: inline-block;
-  padding: 16px 16px 8px;
-  background-color: #fff;
-} */
-/* .h3-shadow{
-  box-shadow: 0 20px 200px 0 rgba(45, 68, 88, 0.06);
-}
-h4{
-  font-size: 28px;
-	line-height: 2.0;
-  letter-spacing: -0.7px;
-  color: #27384b;
-}
-h5{
-  font-size: 24px;
-	font-weight: 500;
-	line-height: 1.33;
-	letter-spacing: -0.8px;
-	text-align: left;
-	color: #27384b;
-} */
-
 :active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
@@ -208,6 +194,24 @@ select::-ms-expand {
   background-color: #1945cd;
 }
 .btn.btn-red:hover .btn-line{
+  background-color: #fff;
+}
+.btn.btn-red-and-white{
+  color: #e43a15;
+  background-color: #fff;
+  border: solid 1px;
+  border-color: #e43a15;
+}
+.btn.btn-red-and-white .btn-line{
+  background-color: #e43a15;
+}
+.btn.btn-red-and-white:hover{
+  border: solid 1px;
+  border-color:rgba(255,255,255, 0.3);
+  color: #ffffff;
+  background-color: #e43a15;
+}
+.btn.btn-red-and-white:hover .btn-line{
   background-color: #fff;
 }
 .btn.btn-blue{
@@ -595,6 +599,88 @@ header .nav-item.dropdown.show a.nav-link{
 /* =========== End Home =============== */
 
 /* =========== ABOUT ================== */
+.about-us{
+  padding: 0 0 330px;
+}
+.about-us-img{
+  position: absolute;
+  bottom: -244px;
+  right: 0;
+  max-width: 244px;
+  z-index: 2;
+}
+.what-we-do{
+  background-image: linear-gradient(113deg, #3023ae, #0069ef);
+}
+.what-we-do-content{
+  padding: 370px 0 140px;
+}
+.what-we-do p{
+  max-width: 680px;
+  margin: 20px 0 0;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: #ffffff
+}
+.what-we-do .fortune{
+  width: 170px;
+  position: relative;
+  float: right;
+  margin-top: 90px;
+}
+.what-we-do .fortune:before{
+  content: '';
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-color: #124fd6;
+  position: absolute;
+  left: 31px;
+  top: -65px;
+}
+.what-we-do .what-we-do-img-right,
+.what-we-do .what-we-do-img-left{
+  position: absolute;
+}
+.what-we-do .what-we-do-img-right,
+.what-we-do .what-we-do-img-left{
+  top: -254px;
+}
+.what-we-do .what-we-do-img-right img,
+.what-we-do .what-we-do-img-left img{
+  height: 508px;
+  width: auto;
+}
+.what-we-do .what-we-do-img-left img{
+  border-right: 2px solid #fff;
+}
+.what-we-do .what-we-do-img-left{
+  left: -320px;
+}
+.company{
+  padding: 360px 0 ;
+}
+.company p{
+  max-width: 480px;
+  margin: 20px 0 60px;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #444444;
+}
 .culture{
   padding: 0;
   background-color: #000;
