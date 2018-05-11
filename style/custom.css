@@ -5,6 +5,7 @@
 /* == Home ==*/
 /* == ABOUT ==*/
 /* == Mobile Application ==*/
+/* == NEWS ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -16,6 +17,10 @@
 @font-face {
   font-family: 'AvantGardeGothicC-Demi';
   src: url('./fonts/ITC_Avant_Garde_Gothic_С/AvantGardeGothicC-Demi.otf') format("opentype");
+}
+@font-face {
+  font-family: 'AvantGardeGothicC';
+  src: url('./fonts/ITC_Avant_Garde_Gothic_С/AvantGardeGothicC.otf') format("opentype");
 }
 
 /* ============ Global ========== */
@@ -206,6 +211,25 @@ select::-ms-expand {
 .btn.btn-red:hover .btn-line{
   background-color: #fff;
 }
+/*  */
+.btn.btn-dark-grey{
+  background-color: #ffffff;
+  color: #5e7a9b;
+  border-color:rgba(94,122,155, 0.3);
+}
+.btn.btn-dark-grey .btn-line{
+  background-color: rgba(94,122,155, 0.3);
+}
+.btn.btn-dark-grey:hover{
+  border: solid 1px;
+  border-color:rgba(255,255,255, 0.3);
+  color: #ffffff;
+  background-color: #1945cd;
+}
+.btn.btn-dark-grey:hover .btn-line{
+  background-color: #fff;
+}
+/*  */
 .btn.btn-red-and-white{
   color: #e43a15;
   background-color: #fff;
@@ -1124,9 +1148,81 @@ header .nav-item.dropdown.show a.nav-link{
 }
 /* =========== End Mobile Application =========== */
 
+/* =========== NEWS =========== */
+.news{
+  padding: 0 0 150px;
+}
+.news .grid {
+  padding: 30px 0 100px;
+  margin: 0 5px;
+}
+.news .grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.news .grid-sizer,
+.news .grid-item {
+  width: 33.333%;
+  float: left;
+  border: 10px solid #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.news .grid-item {
+  float: left;
+}
+.news .grid-item img {
+  display: block;
+  width: 100%;
+}
+.grey-screen{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  top: 0;
+}
+.news .grid-content{
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  max-width: 300px;
+}
+.news-date{
+  font-family: 'ApercuPro-Mono';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: 1.4px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+}
+.news-title{
+  font-family: 'AvantGardeGothicC';
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.news .btn{
+  display: block;
+  margin: 0 auto;
+}
+/* =========== End NEWS =============== */
+
 /* ============= Footer =============== */
 footer .footer-top{
-  padding: 120px 80px 80px;
+  padding: 70px 80px 80px;
+  border-top: 1px solid #d8d8d8;
 }
 footer .logo{
   width: 132px;
@@ -1213,8 +1309,7 @@ footer .copyright{
 
 /* ======== 404 page and Modal ============= */
 .page404{
-  padding: 30px 0 40px;
-  border-bottom: 1px solid #d8d8d8;
+  padding: 30px 0 90px;
 }
 .page404 .title-404{
   font-family: 'AvantGardeGothicC-Demi';
