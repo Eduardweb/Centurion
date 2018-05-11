@@ -6,6 +6,7 @@
 /* == ABOUT ==*/
 /* == Mobile Application ==*/
 /* == NEWS ==*/
+/* == ARTICLE NEWS ==*/
 /* == Footer ==*/
 /* == Modal ==*/
 /* == 404 page and Modal== */
@@ -863,6 +864,34 @@ header .nav-item.dropdown.show a.nav-link{
 /* =========== End ABOUT ============== */
 
 /* ===========  Mobile Application ============== */
+.mobile-development{
+  padding: 91px 0 50px;
+  background-image: url('../img/mobile-app-bg.jpg');
+  background-repeat: no-repeat;
+  height: 580px;
+}
+.mobile-development-block-img{
+  position: absolute;
+  top: 46px;
+  right: 0;
+  max-width: 244px;
+}
+.mobile-development .default-bread{
+  margin: 10px auto 80px;
+}
+.mobile-development .grey-screen{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mobile-development p{
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+.mobile-development .icon-dev{
+  width: 70px;
+  display: block;
+  margin: 0 auto 35px;
+}
 .explore-our-mobile{
   padding: 170px 0 80px;
 }
@@ -1219,6 +1248,146 @@ header .nav-item.dropdown.show a.nav-link{
 }
 /* =========== End NEWS =============== */
 
+/* ============= ARTICLE NEWS ===========*/ 
+.news-article .default-bread{
+  padding-bottom: 30px;
+}
+.blue-screen {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(103deg, #3023ae, #0069ef);
+  position: absolute;
+  top: 0;
+}
+.news-article-title{
+  padding: 160px 0 167px;
+}
+.news-article-title h3{
+  font-family: 'AvantGardeGothicC-Demi';
+  font-size: 48px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.news-article-title p{
+  font-family: 'ApercuPro-Mono';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.64;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.news-article-content{
+  padding: 50px 0  150px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.news-article-content h4{
+  font-family: 'AvantGardeGothicC-Demi';
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #000000;
+  margin: 0 0 30px 0;
+}
+.news-article-content p{
+  margin: 0 0 50px;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.88;
+  letter-spacing: 0.1px;
+  text-align: left;
+  color: #666666;
+}
+.news-one-img{
+  margin: 0 0 50px;
+}
+.news-quote{
+  padding: 59px 131px 49px 73px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.news-quote span{
+  max-width: 776px;
+  font-family: 'ApercuPro-Mono';
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
+.news-quote p{
+  margin: 10px 0 0;
+  font-family: 'AvantGardeGothicC';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: left;
+  color: #999999;
+}
+.news-quote-icon{
+  position: absolute;
+  width: 24px;
+  right: 70px;
+  top: 59px;
+}
+.news-article-nav{
+  margin: 100px 0 0;
+}
+.news-article-nav{
+  display: flex;
+  justify-content: space-between;
+}
+.news-article-nav a{
+  color: #000000;
+}
+.news-article-nav span{
+  font-family: 'ApercuPro-Mono';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  text-align: left;
+}
+.news-article-nav .center-nav image{
+  width: 17px;
+}
+.news-article-nav .right-nav i,
+.news-article-nav .left-nav i{
+  font-size: 14px;
+}
+.news-article-nav .right-nav i{
+  margin-left: 10px;
+}
+.news-article-nav .left-nav i{
+  margin-right: 10px;
+}
+.news-article-nav a:hover{
+  color: #e43a15;
+}
+/* =========== End ARTICLE NEWS ======== */
 /* ============= Footer =============== */
 footer .footer-top{
   padding: 70px 80px 80px;
