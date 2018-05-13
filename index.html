@@ -211,13 +211,135 @@
 
 <section class="mx-auto">
   <div class="industries">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
           <h2 class="color-white">Industries</h2>
         </div>
       </div>
     </div>
+
+    <div class="row">    
+      <div class="col-sm-12">
+        <div class="industries-slider">
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-11.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">InsurTech</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Software development solutions for traditional insurance and InsurTech companies.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-10.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Automotive</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Development of reliable backend infrastructures as well as lightweight, intuitive mobile applications by the best automotive software engineers.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-9.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Finance & Banking</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Comprehensive software solutions for financial and banking institutions.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-1.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Healthcare</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Full-cycle development of innovative healthcare, biotech and life science software solutions.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-2.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Supply Chain  <br>
+                  and Logistics</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Comprehensive systems for supply chain management, logistics, procurement, warehouse management and more.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-11.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">InsurTech</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Software development solutions for traditional insurance and InsurTech companies.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-10.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Automotive</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Development of reliable backend infrastructures as well as lightweight, intuitive mobile applications by the best automotive software engineers.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-9.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Finance & Banking</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Comprehensive software solutions for financial and banking institutions.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-1.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Healthcare</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Full-cycle development of innovative healthcare, biotech and life science software solutions.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="industries-slid">
+            <div class="slide-img">
+              <img src="img/industry-img-2.jpg" alt="industry">
+            </div>
+            <div class="slide-content">
+              <p class="industries-slid-title">Supply Chain  <br>
+                  and Logistics</p>
+              <div class="slider-sep-content"></div>
+              <p class="industries-slid-text">Comprehensive systems for supply chain management, logistics, procurement, warehouse management and more.</p>
+            </div>
+          </div>
+          <!--  -->
+
+
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>        
 
@@ -407,9 +529,11 @@
     
     <script type="text/javascript"> // Slick slider http://kenwheeler.github.io/slick/
       $(document).ready(function(){
-        $('.news-slider').slick({
-          dots: true,
+        $('.industries-slider').slick({
+          dots: false,
           infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 1
         });
       });
     </script>

@@ -137,49 +137,49 @@ select::-ms-expand {
 /* ========== End Global ======= */
 
 /* ========== Slider global ==== */
-.slick-prev:before, .slick-next:before{
-  font-family: FontAwesome;
-  font-size: 13px;
-  color: #005bea;
+.slick-list {
+  overflow: visible;
+}
+.slider-sep-content {
+  width: 20px;
+  height: 3px;
+  background-color: #e54021;
+  margin: 10px 0;
+}
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before{
+  color: #000;
   opacity: 1;
 }
 .slick-prev, .slick-next{
-  width: 77px;
-  height: 77px;
+  display: block;
+  width: 60px;
+  height: 60px;
   background-color: #fff;
-  top: 30%;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+  z-index: 2;
 }
 .slick-prev {
-  left: -193px;
+  left: 15px;
 }
 .slick-next {
-  right: -196px;
-}
-.slick-prev:hover {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.11);
-}
-.slick-next:hover {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.11);
+  right: -25px;
 }
 .slick-prev:before{
-  content:"\f0d9";
+  content: "\f104";
 }
 .slick-next:before{
-  content:"\f0da";
+  content: "\f105";
 }
-.slick-dots li button:before{
-  font-size: 8px;
-	color:#0f65ec;
+.slick-prev:before, .slick-next:before{
+  font-family: FontAwesome;
+  font-size: 18px;
+  color: #e5462e;
 }
-.slick-dots li.slick-active button:before {
-  opacity: .75;
-  color:#0f65ec;
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  color: #e5462e;
+  outline: none;
+  background: #fff;
 }
-.career-block, .products-title{
-  width: 100%;
-  max-width: 1027px;
-}
+
 /* ==== End Slider global ========*/
 
 /* =========== BTN ============= */
@@ -291,7 +291,6 @@ select::-ms-expand {
 }
 .get-in-touch{
   font-family: 'ApercuPro-Mono';
-  width: 190px;
   text-align: center;
   font-size: 16px;
   font-weight: normal;
@@ -303,7 +302,7 @@ select::-ms-expand {
   color: #e54934;
   background-color: inherit;
   border: 0;
-  margin: 0 50px;
+  margin: 0 50px 0 0;
   cursor: pointer;
 }
 .lang{
@@ -326,6 +325,7 @@ select::-ms-expand {
 .lang-wrap{
   position: relative;
   z-index: 1;
+  float: right;
 }
 .lang-wrap i{
   position: absolute;
@@ -358,10 +358,9 @@ header .nav-item.dropdown .fa-angle-down{
   width: 11px;
   height: 11px;
   position: absolute;
-  right: -7px;
   top: 13px;
   color: #000000;
-  right: 60px;
+  right: 45px;
 }
 header .dropdown-toggle::after{
   display: none;
@@ -371,14 +370,15 @@ header{
   z-index: 2;
   position: relative;
   background-color: #fff;
+  height: 140px;
 }
 .navbar, .navbar-brand{
   padding: 0;
 }
 .navbar-brand{
-  margin-right: 105px;
+  margin-right: 0;
 }  
-.navbar-nav .nav-link {
+.navbar-toggleable-md .navbar-nav .nav-link {
   font-family: 'ApercuPro-Mono';
   font-size: 16px;
   font-weight: normal;
@@ -388,7 +388,9 @@ header{
   letter-spacing: -0.3px;
   text-align: left;
   color: #000000;
-  margin-right: 66px;
+  margin-right: 40px;
+  padding-right: 20px;
+  padding-left: 0;
 }
 .logo{
   width: 185px;
@@ -425,7 +427,10 @@ header .dropdown-item:hover {
 header .nav-item.dropdown.show a.nav-link{
   color: #e43a15;
 }
-
+.nav-to-top{
+  top: -40px;
+  padding: 0 30px;
+}
 /* ============= End Header============= */
 
 /* ============= Home ================== */
@@ -447,6 +452,37 @@ header .nav-item.dropdown.show a.nav-link{
 .innovative{
   padding: 284px 0 186px;
   background-image: linear-gradient(110deg, #3023ae, #0069ef);
+}
+.industries-slid-title{
+  margin: 25px 0 0;
+  font-family: 'AvantGardeGothicC-Demi';
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #ffffff;
+}
+.industries .slide-img{
+  max-height: 450px;
+  overflow: hidden;
+}
+.industries-slid{
+  margin: 60px 5px 0 15px;
+}
+.industries-slid-text{
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #daecff;
 }
 .innovative .innovative-img{
   position: absolute;
@@ -556,8 +592,10 @@ header .nav-item.dropdown.show a.nav-link{
   margin: 20px 0 0;
 }
 .industries{
+  overflow: hidden;
   padding: 90px;
   background-color: #000;
+  padding-left: 22%;
 }
 .experise{
   padding: 120px 0 0;
@@ -973,7 +1011,9 @@ header .nav-item.dropdown.show a.nav-link{
   color: #ffffff;
 }
 .how-it-works{
-  padding: 145px 0 215px;
+  padding: 145px 90px 200px;
+  padding-left: 22%;
+  overflow: hidden;
 }
 .exprertise{
   padding: 146px 0 123px;
@@ -1176,6 +1216,57 @@ header .nav-item.dropdown.show a.nav-link{
   text-align: left;
   color: #ffffff;
 }
+.mobile-slid{
+  padding: 0px 0  10px;
+  margin-right: 90px;
+}
+.mobile-slid .mobile-slide-content{
+  position: relative;
+  padding: 15px;
+}
+.mobile-slid .slide-num{
+  position: absolute;
+}
+.mobile-slid h6.mobile-slid-title{
+  font-family: 'AvantGardeGothicC-Demi';
+  font-size: 30px;
+  display: inline-block;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #000000;
+  padding: 180px 0 0px;
+  border-bottom: 3px solid #000;
+}
+.how-it-works .slick-prev, .how-it-works .slick-next {
+  border: solid 1px #e6e6e6;
+  top: 30px;
+}
+.mobile-slid .mobile-slid-text{
+  margin-top: 30px;
+  opacity: 0.5;
+  font-family: 'ApercuPro-Mono';
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  text-align: left;
+  color: #444444;
+}
+.mobile-slid .slide-num{
+  font-size: 205px;
+  font-family: 'AvantGardeGothicC-Demi';
+  left: 23px;
+  top: 33px;
+  opacity: 0.1;
+  color: #444444;
+}
+
 /* =========== End Mobile Application =========== */
 
 /* =========== NEWS =========== */

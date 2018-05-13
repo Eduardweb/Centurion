@@ -133,10 +133,52 @@
 
     <section class="mx-auto">
       <div class="how-it-works">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-12">
               <h2 class="color-black">How it works</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">    
+          <div class="col-sm-12">
+            <div class="mobile-slider">
+
+              <div class="mobile-slid">
+                <div class="mobile-slide-content">
+                  <div class="slide-num">1</div>
+                  <h6 class="mobile-slid-title">Discovery and business analysis</h6>
+                  <p class="mobile-slid-text">Our cross-functional team scrutinizes the app’s initial concept. We study how the application addresses particular business objectives and solves users’ problems. Centurion mobile experts analyze the client’s business model and collaborate closely with client’s teams to identify the key challenges. We scrutinize the app’s target audiences and outline project development milestones.</p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="mobile-slid">
+                <div class="mobile-slide-content">
+                  <div class="slide-num">2</div>
+                  <h6 class="mobile-slid-title">UX and visual design</h6>
+                  <p class="mobile-slid-text">We evaluate customer expectations and use cases of the application. At this stage, we define how user experience of the future app will help achieve project’s business objectives. Centurion team proceeds to UX concept development, wireframing, user interface mapping, and testing.</p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="mobile-slid">
+                <div class="mobile-slide-content">
+                  <div class="slide-num">3</div>
+                  <h6 class="mobile-slid-title">Product development</h6>
+                  <p class="mobile-slid-text">Centurion teams use Agile/Scrum methodologies to create an early working application, and then add features and improve the application with every iteration. Our mobile testers are involved at every stage of the development process to help identify improvement areas.</p>
+                </div>
+              </div>
+              <!--  -->
+              <div class="mobile-slid">
+                <div class="mobile-slide-content">
+                  <div class="slide-num">4</div>
+                  <h6 class="mobile-slid-title">Discovery and business analysis</h6>
+                  <p class="mobile-slid-text">Our cross-functional team scrutinizes the app’s initial concept. We study how the application addresses particular business objectives and solves users’ problems. Centurion mobile experts analyze the client’s business model and collaborate closely with client’s teams to identify the key challenges. We scrutinize the app’s target audiences and outline project development milestones.</p>
+                </div>
+              </div>
+              <!--  -->
+              
+              
+
             </div>
           </div>
         </div>
@@ -296,14 +338,16 @@
       w3.includeHTML(); 
     </script>
 
-    <script type="text/javascript"> // Slick slider http://kenwheeler.github.io/slick/
-      $(document).ready(function(){
-        $('.news-slider').slick({
-          dots: true,
-          infinite: false,
-        });
-      });
-    </script>
+<script type="text/javascript"> // Slick slider http://kenwheeler.github.io/slick/
+  $(document).ready(function(){
+    $('.mobile-slider').slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1
+    });
+  });
+</script>
 
 
     </body>
