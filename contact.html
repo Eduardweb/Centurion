@@ -61,6 +61,230 @@
     <div w3-include-HTML="./header-home.html"></div>
     <main>
 <!-- ============================ --> 
+
+<!-- <div id="newYork" class="googleMap"></div> -->
+<!-- <div id="hamburg" class="googleMap"></div> -->
+<!-- <div id="madrid" class="googleMap"></div> -->
+<!-- <div id="dubai" class="googleMap"></div> -->
+<!--  -->
+
+  <section class="mx-auto">
+    <div class="contact">
+      <div class="container">
+       <div class="row">
+          <div class="col-sm-12">
+            <h1 class="page-title">Contact Information</h1>
+            <p class="default-bread">home - Contact Information</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="contact-bg"></div>
+    <div class="container contact-text">  
+      <div class="row">
+        <div class="col-sm-8">
+          <p>Thank you for your interest in contacting us about our products and services. Please review the contact information below and choose the option that best suits you.</p>
+          <button class="btn btn-white">
+            Get in touch
+            <div class="btn-line"></div>
+          </button>
+        </div>
+
+        <div class="col-sm-4">
+          <p class="phone">0800-2222-555</p>
+          <p class="email">sales@centurion.com</p>
+          <div class="social">
+            <span>
+              <a href="#">
+                <img src="img/twitter-white.svg" alt="twitter">
+              </a>
+            </span>
+            <span>
+              <a href="#">
+                <img src="img/facebook-white.svg" alt="facebook">
+              </a>  
+            </span>
+            <span>
+              <a href="#">
+                <img src="img/instagram-white.svg" alt="instagram">
+              </a>  
+            </span>
+            <span>
+              <a href="#">
+                <img src="img/youtube-white.svg" alt="youtube">
+              </a>  
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row google-map-box">
+        <div class="col-sm-6">
+          <div class="flag">
+            <img src="img/us.svg" alt="USA">
+          </div>
+          <p class="city-contact color-white">New York</p>
+          <p class="country-contact color-white">USA</p>
+          <p class="location-contact color-white">1900 K Street, N.W. Suite 725 Washington D.C. 20006</p>
+        </div>
+        <div class="col-sm-6">
+            <div id="newYork" class="googleMap"></div>
+        </div>
+      </div>
+
+      <div class="row google-map-box">
+        <div class="col-sm-6">
+          <div class="flag">
+            <img src="img/de.svg" alt="Germany">
+          </div>
+          <p class="city-contact">Hamburg</p>
+          <p class="country-contact">Germany</p>
+          <p class="location-contact">1900 K Street, N.W. Suite 725 Washington D.C. 20006</p>
+        </div>
+        <div class="col-sm-6">
+          <div id="hamburg" class="googleMap"></div>
+        </div>
+      </div>
+
+      <div class="row google-map-box">
+        <div class="col-sm-6">
+          <div class="flag">
+            <img src="img/es.svg" alt="Spain">
+          </div>
+          <p class="city-contact">Madrid</p>
+          <p class="country-contact">Spain</p>
+          <p class="location-contact">1900 K Street, N.W. Suite 725 Washington D.C. 20006</p>
+        </div>
+        <div class="col-sm-6">
+          <div id="madrid" class="googleMap"></div>
+        </div>
+      </div>
+
+      <div class="row google-map-box">
+        <div class="col-sm-6">
+          <div class="flag">
+            <img src="img/ae.svg" alt="OAU">
+          </div>
+          <p class="city-contact">Dubai</p>
+          <p class="country-contact">OAU</p>
+          <p class="location-contact">1900 K Street, N.W. Suite 725 Washington D.C. 20006</p>
+        </div>
+        <div class="col-sm-6">
+          <div id="dubai" class="googleMap"></div>
+        </div>
+      </div>
+
+    </div>  
+  </section>      
+
+
+<script>
+
+  function initMap() {
+    var New_York = {lat: 40.6976633, lng: -74.1201065};
+    var Hamburg = {lat: 53.5582447, lng: 9.647645};
+    var Madrid = {lat: 40.4380637, lng: -3.7497479};
+    var Dubai = {lat: 25.0755932, lng: 55.0873199};
+
+    var mapStyle = [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+    var mapIcon = 'img/map-marker.svg';
+
+
+    var map = new google.maps.Map(document.getElementById('newYork'), {
+      zoom: 4,
+      center: New_York,
+      zoom: 11,
+      zoomControl: false,
+      scrollwheel: false,
+      scaleControl: false,
+      rotateControl: false,
+      panControl: false,
+      mapMaker: false,
+      disableDefaultUI: false,
+      streetViewControl: false,
+      signInControl: false,
+      mapTypeControl: false,
+      styles: mapStyle,
+    });
+    var marker = new google.maps.Marker({
+      position: New_York,
+      map: map,
+      icon: mapIcon,
+    });
+
+    var map = new google.maps.Map(document.getElementById('hamburg'), {
+      zoom: 4,
+      center: Hamburg,
+      zoom: 11,
+      zoomControl: false,
+      scrollwheel: false,
+      scaleControl: false,
+      rotateControl: false,
+      panControl: false,
+      mapMaker: false,
+      disableDefaultUI: false,
+      streetViewControl: false,
+      signInControl: false,
+      mapTypeControl: false,
+      styles: mapStyle,
+    });
+    var marker = new google.maps.Marker({
+      position: Hamburg,
+      map: map,
+      icon: mapIcon,
+    });
+
+    var map = new google.maps.Map(document.getElementById('madrid'), {
+      zoom: 4,
+      center: Madrid,
+      zoom: 11,
+      zoomControl: false,
+      scrollwheel: false,
+      scaleControl: false,
+      rotateControl: false,
+      panControl: false,
+      mapMaker: false,
+      disableDefaultUI: false,
+      streetViewControl: false,
+      signInControl: false,
+      mapTypeControl: false,
+      styles: mapStyle,
+    });
+    var marker = new google.maps.Marker({
+      position: Madrid,
+      map: map,
+      icon: mapIcon,
+    });
+
+    var map = new google.maps.Map(document.getElementById('dubai'), {
+      zoom: 4,
+      center: Dubai,
+      zoom: 11,
+      zoomControl: false,
+      scrollwheel: false,
+      scaleControl: false,
+      rotateControl: false,
+      panControl: false,
+      mapMaker: false,
+      disableDefaultUI: false,
+      streetViewControl: false,
+      signInControl: false,
+      mapTypeControl: false,
+      styles: mapStyle,
+    });
+    var marker = new google.maps.Marker({
+      position: Dubai,
+      map: map,
+      icon: mapIcon,
+    });
+  }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9s2Ks1r57yqyYDJ6JMqtl6GClPPKTu24&callback=initMap">
+</script>
+
 <!-- ============================ -->      
     </main>  
 
