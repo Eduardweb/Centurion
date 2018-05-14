@@ -1899,9 +1899,25 @@ footer .copyright{
 @media screen and (max-width: 1399px){
   .navbar-toggleable-md .navbar-collapse{
     margin-left: 200px;
-  }  
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+  } 
+  .industries{
+    padding-left: 120px;
+  } 
+  .innovative .top-bg{
+    display: none;
+  }
 }
 @media screen and (max-width: 1199px){
+  .innovative .bottom-bg{
+    display: none;
+  }
+  .innovative .arm {
+    max-width: 600px;
+    top: -100px;
+  }  
   .navbar-toggleable-md .navbar-collapse {
     margin-left: 50px;
   }
@@ -1989,6 +2005,13 @@ footer .copyright{
   .what-we-do .what-we-do-img-left {
     left: -133px;
   } 
+  .partners .partner{
+    margin: 0 5px;
+  }
+  .experise-box{
+    height: auto;
+    min-height:auto;
+  }
   .about-us-img{
     display: none;
   }
@@ -2046,7 +2069,8 @@ footer .copyright{
     top: 7px;
     position: absolute;
   }
-  h1.page-title {
+  h1.page-title,
+  h1 {
     font-size: 50px;
   } 
   .why-us .why-us-img {
@@ -2071,7 +2095,7 @@ footer .copyright{
   }
   .facilities {
     padding: 100px 0 133px;
-  }
+  } 
 }
 @media screen and (max-width: 859px){
   .navbar{
@@ -2143,6 +2167,12 @@ footer .copyright{
 }
 
 @media screen and (max-width: 576px){
+  .industries {
+    padding: 45px 20px;
+  }
+  .industries-slid {
+    margin: 30px 0px 0 15px;
+  }
   .about-us {
     padding: 0 0 30px;
   }
@@ -2165,8 +2195,11 @@ footer .copyright{
   .contact-text{
     padding: 50px 15px;
   }
-  h1.page-title {
+  h1.page-title,{
     font-size: 40px;
+  }
+  centurion p {
+    font-size: 22px;
   }
   .get-in-touch-modal .contact{
     font-size: 24px;
@@ -2200,6 +2233,9 @@ footer .copyright{
   h4{
     font-size: 24px
   }
+  h5 {
+    font-size: 22px;
+  } 
   .exprertise-list{
     font-size: 22px;
   }
@@ -2258,7 +2294,7 @@ footer .copyright{
   .people p.number {
     font-size: 40px;
   }
-  .btn.btn-blue{
+  .blue-block .btn{
     margin-bottom: 15px;
   }
   .blue-block .bnt-link + .bnt-link {
@@ -2279,12 +2315,33 @@ footer .copyright{
   .culture-box-content {
     padding-left: 0;
   }
+  .centurion {
+    padding: 80px 0 140px;
+  }
+  .innovative {
+    padding: 260px 0 90px;
+  }
+  .services {
+    padding: 60px 0 20px;
+  }
+  .experise {
+    padding: 60px 0 0;
+  }
+  .partners {
+    padding: 50px 0;
+  }
+  .partners-wrap {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 425px){
   .navbar-brand {
     width: 100%;
   }  
+  .innovative {
+    padding: 200px 0 90px;
+  }
   .navbar-toggleable-md .navbar-collapse{
     width: 100%;
     position: absolute;
@@ -2313,5 +2370,8 @@ footer .copyright{
   }
   .get-in-touch-modal .contact{
     margin-bottom: 40px;
+  }
+  .innovative {
+    padding: 140px 0 90px;
   }
 } 

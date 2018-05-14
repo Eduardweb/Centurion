@@ -120,7 +120,7 @@
           <h2 class="color-black">Services</h2>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/sap.svg" alt="sap">
@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/mobile.svg" alt="mobile">
@@ -144,7 +144,7 @@
           </div>
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/software.svg" alt="software">
@@ -156,7 +156,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/customer.svg" alt="customer">
@@ -168,7 +168,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/testing.svg" alt="testing">
@@ -180,7 +180,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/dedicated-team.svg" alt="dedicated team">
@@ -192,7 +192,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="service-wrap">
             <div class="service-img">
               <img src="img/support.svg" alt="support">
@@ -351,7 +351,7 @@
           <h2 class="color-black">Experise</h2>
         </div>
 
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Big</h5>
@@ -362,7 +362,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Internet of Things</h5>
@@ -373,7 +373,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Enterprise</h5>
@@ -384,7 +384,7 @@
           </div>
         </div>
         
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Digital</h5>
@@ -395,7 +395,7 @@
           </div>
         </div> 
 
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Machine Learning</h5>
@@ -406,7 +406,7 @@
           </div>
         </div> 
 
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Business </h5>
@@ -417,7 +417,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">Data</h5>
@@ -428,7 +428,7 @@
           </div>
         </div>
 
-        <div class="col-md-3 experise-col">
+        <div class="col-md-12 col-lg-4 experise-col">
           <div class="experise-box-red-line"></div>
           <div class="experise-box">
             <h5 class="color-black">UI/UX Design and</h5>
@@ -533,9 +533,47 @@
           dots: false,
           infinite: false,
           slidesToShow: 5,
-          slidesToScroll: 1
-        });
-      });
+          slidesToScroll: 1,
+          responsive: [
+        {
+          breakpoint: 1440,
+          settings: {
+            arrows: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: false
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: false
+          }
+        },
+        {
+          breakpoint: 859,
+          settings: {
+            arrows: false,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: false
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false
+          }
+        },
+      ]
+    });
+  });
     </script>
 
     
