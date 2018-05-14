@@ -84,7 +84,7 @@
       <div class="explore-our-mobile">
         <div class="container">
           <div class="row">
-            <div class="col-sm-8">
+            <div class="col-md-8">
               <h2 class="color-black">Explore our mobile application development expertise</h2>
               <p>Mobile development is an integral part of nearly every Centurion project. Our teams deliver native, hybrid, and cross-platform mobile products with particular focus on security, usability, and UI / UX. We collaborate with companies across various domains creating mobile applications for smartphones, tablets, and wearables.</p>
               <p>Centurion dedicated development teams deliver top value for every outsourced mobile development solution. Our teams have over ten years of experience in enterprise mobility, as well as strong expertise in iOS, Android, Unity, and Unreal Engine platforms.</p>
@@ -104,21 +104,21 @@
         <div class="container">
           <div class="row">
 
-            <div class="col-sm-4 mobile-blue-box-padding">
+            <div class="col-lg-4 mobile-blue-box-padding">
               <div class="mobile-blue-box">
                 <p class="mobile-title">Mobile applications that handle high load</p>
                 <p class="mobile-content">Mobile development teams at Centurion build mobile apps that handle large volumes of server requests. For instance, we have helped a British-based company Lebara develop a P2P Money transfer application, as well as Lebara Talk, a calling and messaging app.</p>
               </div>
             </div>
 
-            <div class="col-sm-4 mobile-blue-box-padding">
+            <div class="col-lg-4 mobile-blue-box-padding">
               <div class="mobile-blue-box">
                 <p class="mobile-title">Mobile apps for multiple industries</p>
                 <p class="mobile-content">Centurion teams deliver mobile applications for various domains, including telecom, logistics, hospitality, and more. For instance, we cooperate with HotSchedules, a US-based service provider of mobile tools for restaurants, retailers, and hotels.</p>
               </div>
             </div>
 
-            <div class="col-sm-4 mobile-blue-box-padding">
+            <div class="col-lg-4 mobile-blue-box-padding">
               <div class="mobile-blue-box">
                 <p class="mobile-title">Cross-platform and hybrid mobile applications</p>
                 <p class="mobile-content">Our dedicated development team created a cross-platform industrial automation app for SCHAD. The solution simplifies tracking and reporting activities at airports, automotive companies, plants, and industrial factories. </p>
@@ -189,12 +189,12 @@
       <div class="exprertise">
         <div class="container">
           <div class="row">
-            <div class="col-sm-5">
+            <div class="col-md-5">
               <div class="exprertise-img">
                 <h2 class="color-white">Exprertise</h2>
               </div>
             </div>
-            <div class="col-sm-7">
+            <div class="col-md-7">
 
               <p class="exprertise-list">
                 <span>
@@ -248,7 +248,7 @@
       <div class="why-us">
         <div class="container">
           <div class="row">
-            <div class="col-sm-7">
+            <div class="col-lg-7">
               <h2 class="color-black">Why us</h2>
 
               <div class="why-us-box">
@@ -273,7 +273,7 @@
 
             </div>
 
-            <div class="col-sm-5">
+            <div class="col-lg-5">
               <div class="why-us-img">
                 <img src="img/why-us-bg.jpg" alt="why us">
                 <img src="img/why-us2-bg.jpg" alt="why us" class="small-img">
@@ -344,7 +344,18 @@
       dots: false,
       infinite: false,
       slidesToShow: 2,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1150,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        },
+      ]
     });
   });
 </script>
